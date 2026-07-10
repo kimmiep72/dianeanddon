@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Don &amp; Dianne</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap');
+
+  :root{
+    --paper: #f6f3ec;
+    --ink: #2c3b3a;
+    --navy: #2f4550;
+    --gold: #b08a3e;
+    --line: #d8d2c2;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  body{
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+
+  .wrap{
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header{
+    padding: 90px 0 50px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow{
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+
+  h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(42px, 8vw, 72px);
+    color: var(--navy);
+    line-height: 1.05;
+  }
+
+  .amp{
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .tagline{
+    margin-top: 22px;
+    font-size: 18px;
+    color: #5c6664;
+  }
+
+  main{
+    padding: 60px 0 90px;
+  }
+
+  section{
+    margin-bottom: 64px;
+  }
+
+  section h2{
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    color: var(--navy);
+    margin-bottom: 18px;
+  }
+
+  section p{
+    font-size: 17px;
+    color: #45524f;
+    max-width: 620px;
+  }
+
+  .photo-frame{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #eae5d8;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .photo-frame img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .gallery .photo-frame{ aspect-ratio: 4/3; margin-bottom: 0; }
+
+  footer{
+    padding: 40px 0 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #8a8577;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 600px){
+    .gallery{ grid-template-columns: 1fr; }
+    header{ padding: 60px 0 40px; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">Welcome to</div>
+      <h1>Don <span class="amp">&amp;</span> Dianne</h1>
+      <p class="tagline">A little corner of the internet, just for us.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section>
+        <h2>Hello!</h2>
+        <p>
+        Don and Dianne have been married since 1970 — proof that a guy who liked painting the town red and a girl who was practically a nun wannabe could go the distance. The story goes that he liked her legs, she liked his hair, and somehow it's still working out more than five decades later.
+        </p>
+      </section>
+
+      <section>
+        <h2>A photo or two</h2>
+        <div class="photo-frame">
+          <img src="assets/photos/general/maandpasantamonica.jpg" alt="Ma and Pa in Santa Monica" loading="lazy">
+        </div>
+      </section>
+
+      <section>
+        <h2>Moments</h2>
+        <div class="gallery">
+          <div class="photo-frame">
+            <img src="assets/photos/general/maandpabowl.JPG" alt="Ma and Pa" loading="lazy">
+          </div>
+          <div class="photo-frame">
+            <img src="assets/photos/general/maandpadrink.jpg" alt="Ma and Pa" loading="lazy">
+          </div>
+          <div class="photo-frame">
+            <img src="assets/photos/general/maandpajoke.JPG" alt="Ma and Pa laughing" loading="lazy">
+          </div>
+          <div class="photo-frame">
+            <img src="assets/photos/general/maandpapeace.JPG" alt="Ma and Pa" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+     
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      donanddianne.com
+    </div>
+  </footer>
+
+</body>
+</html>
